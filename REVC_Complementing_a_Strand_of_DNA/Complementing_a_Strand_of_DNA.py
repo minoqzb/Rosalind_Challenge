@@ -1,6 +1,7 @@
 f = open("rosalind_revc.txt", "r")
-
 dna = f.read().strip()
+f.close()
+
 reverse = ""
 
 for nucleotide in dna:
@@ -13,4 +14,5 @@ for nucleotide in dna:
     elif nucleotide == 'T':
         reverse = 'A' + reverse
 
-print(reverse)
+f = open("rosalind_revc_output.txt", "w")
+f.write(reverse)

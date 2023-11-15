@@ -1,6 +1,7 @@
 f = open("rosalind_rna.txt", "r")
-
 dna_seq = f.read().strip()
+f.close()
+
 rna_seq = ""
 
 for nucleotide in dna_seq:
@@ -9,4 +10,5 @@ for nucleotide in dna_seq:
     else:
         rna_seq += nucleotide
 
-print(rna_seq)
+f = open("rosalind_rna_output.txt", "w")
+f.write(rna_seq)

@@ -1,7 +1,6 @@
 f = open("rosalind_dna.txt", "r")
-
-dna_seq = f.read()
-dna_seq = dna_seq.strip()
+dna_seq = f.read().strip()
+f. close()
 
 A_cnt = 0
 C_cnt = 0
@@ -18,4 +17,5 @@ for nucleobase in dna_seq:
     elif nucleobase == 'T':
         T_cnt += 1
 
-print(A_cnt, C_cnt, G_cnt, T_cnt)
+f = open("rosalind_dna_output.txt", "w")
+f.write(str(A_cnt) + " " + str(C_cnt) + " " + str(G_cnt) + " " + str(T_cnt))
