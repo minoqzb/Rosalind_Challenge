@@ -16,3 +16,4 @@ for nucleotide in dna:
 
 f = open("rosalind_revc_output.txt", "w")
 f.write(reverse)
+f.close()

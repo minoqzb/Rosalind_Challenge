@@ -12,3 +12,4 @@ for nucleotide in dna_seq:
 
 f = open("rosalind_rna_output.txt", "w")
 f.write(rna_seq)
+f.close()

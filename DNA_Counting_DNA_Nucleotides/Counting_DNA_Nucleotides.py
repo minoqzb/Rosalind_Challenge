@@ -19,3 +19,4 @@ for nucleobase in dna_seq:
 
 f = open("rosalind_dna_output.txt", "w")
 f.write(str(A_cnt) + " " + str(C_cnt) + " " + str(G_cnt) + " " + str(T_cnt))
+f.close()
