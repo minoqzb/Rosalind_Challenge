@@ -4,6 +4,7 @@ def getNumberOfRabbitsRec(month, offspring):
     else:
         return getNumberOfRabbitsRec(month - 1, offspring) + getNumberOfRabbitsRec(month - 2, offspring) * offspring
 
+
 f = open("rosalind_fib.txt", "r")
 int_arr = f.read().split(" ")
 f.close()
